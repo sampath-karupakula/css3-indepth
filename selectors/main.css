@@ -1,0 +1,21 @@
+.container {
+    margin: 10px auto;
+    height: 650px;
+    width: 100%;
+}
+
+.header {
+    height: 15%;
+    background-color: green;
+}
+
+#body {
+    height: 75%;
+    background-color: yellow;
+}
+
+footer {
+    height: 10%;
+    color: white;
+    background-color: black;
+}
