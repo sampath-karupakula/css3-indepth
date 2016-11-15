@@ -1,0 +1,93 @@
+/*
+    attribute presence selector
+*/
+
+[rel~=engine] {
+    text-decoration: none;
+    font-size: 2em;
+    background-color: #eee;
+    padding: 4px;
+    border-bottom: 3px solid #ccc;
+}
+
+[rel~=engine] :link,
+[rel~=engine] :visited {
+    color: #34444c;
+}
+
+[rel~=engine]:hover {
+    background: #ffeb3b;
+    border-color: #ffc107;
+}
+
+
+/*
+    hyphenated attribute value selector
+*/
+
+[lang |="fr"] {
+    font-style: italic;
+}
+
+[lang |="fr"] q:before {
+    content: '\00AB';
+}
+
+[lang |="fr"] q:after {
+    content: '\00BB';
+}
+
+[class|="articlepromo"] {
+    border-top: 5px solid #4caf50;
+    color: #555;
+    line-height: 1.3;
+    padding-top: .5em;
+}
+
+[class|="articlepromo"] h3 {
+    color: #000;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+[class|="articlepromo"] {
+    margin: 0 0 1em;
+}
+
+
+/*
+    attribute values by substring
+
+    startswith
+*/
+
+[href^="tel:"] {
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 2em;
+    background-color: #eee;
+    border-bottom: 3px solid #ccc;
+    padding: .5em 1em .5em 2em;
+}
+
+
+/*
+    ends with
+*/
+
+[href$="pdf"] {
+    border-radius: 100px;
+    text-decoration: none;
+    background-color: #eee;
+    border-bottom: 3px solid #ccc;
+    padding: .5em 1em .5em 2em;
+}
+
+
+/*
+    contains
+*/
+
+[class*="sports"] {
+    font-style: italic;
+}
