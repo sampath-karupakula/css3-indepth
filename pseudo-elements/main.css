@@ -1,0 +1,25 @@
+.before::before {
+    content: " content placed from css(before)"
+}
+
+.after::after {
+    content: " content placed from css(after)"
+}
+
+p::first-letter {
+    font: bold italic 3em / .5 serif;
+    font-style: italic;
+    color: #607d8b;
+    float: left;
+    margin: .2em .25em .01em 0;
+    text-transform: capitalize;
+}
+
+p::first-line {
+    color: #555;
+}
+
+p::selection {
+    background-color: #000;
+    color: #900;
+}
