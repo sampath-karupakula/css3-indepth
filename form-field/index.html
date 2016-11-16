@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form action="#">
+        <p><label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exmple: jane.doe@example.com" required>
+        </p>
+        <p><select name="course" id="course">
+            <option value="">select</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JAVASCRIPT">JS</option>
+            </select></p>
+        <p><input type="checkbox" id="allcourse">
+            <label for="allcourse">Want to attend all courses</label>
+        </p>
+        <label for="picknum">Want to attend all courses</label>
+        <p><input type="number" min="1" max="100" id="picknum" name="picknum" step="1">
+        </p>
+        <p>
+            <h4>do you want meal at class room</h4>
+            <input type="radio" id="kosher" name="meal"><label for="kosher">kosher</label>
+            <input type="radio" id="vegetarian" name="meal"><label for="vegetarian">vegetarian</label>
+            <input type="radio" id="vegan" name="meal"><label for="vegan">vegan</label>
+            <input type="radio" id="gluten" name="meal"><label for="gluten">gluten</label>
+        </p>
+        <button type="submit" disabled>Save Draft</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

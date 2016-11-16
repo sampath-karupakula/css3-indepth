@@ -1,0 +1,57 @@
+button:disabled {
+    opacity: .5;
+}
+
+button:enabled {
+    color: green;
+    background: #009;
+    font-weight: bold;
+    height: 30px;
+    font-family: sans-serif;
+}
+
+input:required {
+    border: 1px solid #ffc107;
+}
+
+select:optional {
+    border: 3px solid green;
+}
+
+input:checked+label {
+    color: red;
+}
+
+[type=radio] {
+    opacity: 0;
+}
+
+input:out-of-range {
+    background: #ffeb3b;
+}
+
+input:in-range {
+    background: #fff;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+[type=radio]+label::before {
+    background: #fff;
+    content: ' ';
+    display: inline-block;
+    height: 1.2em;
+    margin-right: 1em;
+    vertical-align: middle;
+    width: 1.2rem;
+}
+
+[type=radio]:checked+label::before {
+    background: #4caf50;
+}
