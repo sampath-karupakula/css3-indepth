@@ -1,0 +1,96 @@
+.comment:target {
+    background-color: #ffeb3b;
+    border-color: #ffc107;
+}
+
+.comment a {
+    text-decoration: none;
+    margin: 4px;
+    color: grey;
+}
+
+article:not(.comment) {
+    background-color: red;
+}
+
+label:not(.label-radio) {
+    font-weight: bold;
+    display: block;
+}
+
+.fruits {
+    margin: auto 100px;
+}
+
+.fruits1 li:first-child {
+    color: #e91e63;
+}
+
+.fruits1 li:last-child {
+    color: #4caf50;
+}
+
+.fruits li:nth-last-child(odd) {
+    background-color: #add8e6;
+}
+
+.tabbed-values {
+    display: block;
+    clear: both;
+}
+
+.tabbed-values::after {
+    content: "";
+    clear: both;
+}
+
+li:only-child {
+    color: #9c27b0;
+}
+
+.tabbed-values>li {
+    list-style-type: none;
+    background-color: purple;
+    float: left;
+    width: 70px;
+    padding-top: 10px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.tabbed-values>li:nth-child(-n+8) {
+    background: #e91e63;
+}
+
+.tabbed-values>li:last-child {
+    clear: right;
+}
+
+div,
+p {
+    float: left;
+    width: 70px;
+    margin: 10px;
+    background: #009;
+    padding-top: 10px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    border-radius: 50px;
+}
+
+p:nth-of-type(even) {
+    background: #cddc39;
+}
+
+p:nth-last-of-type(even) {
+    background: #cddc39;
+}
